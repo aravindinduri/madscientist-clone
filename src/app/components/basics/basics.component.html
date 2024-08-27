@@ -1,1 +1,27 @@
-<p>basics works!</p>
+<!-- InterPolition -->
+<h4>{{Name }}</h4>
+<!-- Property Binding -->
+<button [disabled]="isBtnDisabled">click me</button>
+<br>
+<br>
+<!-- Event Handiling -->
+<input type="text"  (input)="onChange($event)"> 
+<!-- Using For Loops -->
+<h4>Using For</h4>
+
+<div>
+    @for(stud of students;track stud.name){
+            <h4>Name - {{stud.name}} Branch - {{stud.Branch}} Year - {{stud.Year}}</h4>
+        
+    }
+</div>
+
+<!-- Uisng ngFor -->
+<!-- *ngFor and ngIf are avaliable in CommonModule -->
+<h4>Using *ngFor</h4>
+<div *ngFor="let stud of students">
+    <h4>Name - {{stud.name}} Branch - {{stud.Branch}} Year - {{stud.Year}}</h4>
+</div> 
+
+<h4>Using Pipes</h4>
+<h4>{{Name | uppercase }}</h4>
