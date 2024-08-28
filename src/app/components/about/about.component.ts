@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CounterService } from '../../services/counter.service';
 @Component({
   selector: 'app-about',
   standalone: true,
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  constructor(public countService:CounterService){}
 
 }

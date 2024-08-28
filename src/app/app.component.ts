@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BasicsComponent } from './components/basics/basics.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,5 +10,4 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Madscientist-clone';
 }

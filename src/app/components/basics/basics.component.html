@@ -18,10 +18,19 @@
 
 <!-- Uisng ngFor -->
 <!-- *ngFor and ngIf are avaliable in CommonModule -->
-<h4>Using *ngFor</h4>
+<h4>Using Directives</h4>
+<h5>*ngFor</h5>
 <div *ngFor="let stud of students">
     <h4>Name - {{stud.name}} Branch - {{stud.Branch}} Year - {{stud.Year}}</h4>
 </div> 
 
+<h5>*ngIf</h5>
+<div *ngIf="students[0].name == 'aravind'">
+    <h4>Name - {{students[0].name}}  : name Exsists</h4>
+</div> 
 <h4>Using Pipes</h4>
 <h4>{{Name | uppercase }}</h4>
+
+<h1>Data Fetching</h1>
+
+<!-- <button (click)="fetchData.getData()">getData</button> -->
